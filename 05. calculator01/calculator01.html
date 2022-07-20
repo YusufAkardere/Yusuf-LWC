@@ -1,0 +1,26 @@
+<template>
+
+    <lightning-card class="slds-card__body_inner">
+        <hr>
+        <!-- Card Header:  -->
+        <p class="slds-card__header-title" style="color:rgb(255, 0, 0);">My Calculator</p>
+        
+
+        <lightning-card class="slds-card__body_inner">
+            <p class="slds-card__header-title" style="color:rgb(0, 0, 255);">Inputs:</p>
+            <lightning-input label="First Number" value={checkMe} onchange={xHandler}> </lightning-input>
+            <lightning-input label="Second Number" value={checkMe} onchange={yHandler}> </lightning-input>
+            <br>
+            <lightning-button class="slds-m-left_x-small" variant="brand" label="+" onclick={sumHandler}> </lightning-button>
+            <lightning-button class="slds-m-left_x-small" variant="brand" label="X" onclick={multiplyHandler}> </lightning-button>
+            <lightning-button class="slds-m-left_x-small" label="Clear" onclick={clearHandler}> </lightning-button>
+            <hr>
+            <p class="slds-card__header-title" style="color:rgb(0, 0, 255);">Result:</p>
+            <lightning-input label="Result" value={myResult}> </lightning-input>
+        </lightning-card>
+  
+  
+        <hr>
+    </lightning-card>
+
+</template>
